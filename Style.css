@@ -1,0 +1,80 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+  background-image: url("images//panneau-svt11.png");
+  background-position: -20px 100px;
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-color: white;
+  margin: 0;
+}
+
+.container {
+  width: 100%; /* Set width to cover the whole viewport */
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: purple;
+  list-style-type: none;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+li {
+  float: left;
+  width: 25%;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding:25px 35px;
+  text-decoration: none;
+  transition: background-color 0.3s; 
+  animation: fadeIn 1s ease-in-out;
+}
+
+li a:hover {
+  background-color: yellowgreen;
+  animation: scale 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+h1{
+  position: relative;
+  top: 100px;
+  left: 300px;
+  font-size: 50px;
+  color: seagreen;
+  animation: fadeIn 1s ease-in-out;
+}
+p{
+  font-weight: bold;
+  position: relative;
+  top: 250px;
+  left: 200px;
+  font-size: 30px;
+  animation: fadeIn 1s ease-in-out;
+}
